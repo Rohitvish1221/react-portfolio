@@ -7,7 +7,7 @@ function Skills() {
                 My <span className="text-blue-600">Skills</span>
             </h2>
 
-            <div className=" px-8 w-[100%] mx-auto my-0 flex flex-wrap gap-x-20 justify-center ">
+            <div className=" px-8 w-[100%] mx-auto my-0 flex flex-wrap gap-x-20 justify-center">
                 <div className="bg-white h-30 w-32 p-6 mb-20 rounded-2xl shadow-lg hover:scale-105 transition">
                     <img className=" " src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
                 </div>

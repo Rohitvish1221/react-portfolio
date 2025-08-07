@@ -33,8 +33,8 @@ function Home() {
                 <h3 className="text-2xl font-semibold">Hi, Myself</h3>
                 <h1 className="text-5xl font-bold">Rohit Vishwakarma</h1>
                 <h3 className="text-2xl font-semibold mb-4">And I'm a <span key={index} className="text-[#535bf2] flex font-mono text-xl typing">{texts[index]}</span></h3>
-                <p className="text-lg mb-2">Welcome to my web developer portfolio!</p>
-                <p className="text-lg mb-6">A skilled and creative web developer with a passion for creating beautiful, responsive and user-friendly websites.</p>
+                <p className="text-lg mb-2">Welcome to my Web Developer Portfolio!</p>
+                <p className="text-lg mb-6">A skilled and creative Web Developer with a passion for creating beautiful, responsive and user-friendly websites.</p>
                 <div className="flex space-x-4 mb-6">
                     <a href="https://www.linkedin.com/in/rohit-vishwakarma001/" target='_blank'><FaLinkedin className="text-2xl hover:text-black" /></a>
                     <a href="https://github.com/Rohitvish1221" target='_blank'><FaGithub className="text-2xl hover:text-black" /></a>
