@@ -11,7 +11,11 @@ function Header() {
 
     const navVariants = {
         hidden: { opacity: 0, y: -20 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.4, staggerChildren: 0.1 } },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.4, staggerChildren: 0.1 },
+        },
     };
 
     const linkVariants = {
@@ -33,7 +37,7 @@ function Header() {
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: "spring", stiffness: 300 }}
             >
-                Portfolio
+                Projects
             </motion.a>
 
             {/* Hamburger Icon */}
@@ -53,18 +57,20 @@ function Header() {
                 initial="hidden"
                 animate="visible"
             >
-                {["Home", "About", "Skills", "My Work", "Contact"].map((link, index) => (
-                    <motion.a
-                        key={index}
-                        href={`#${link.toLowerCase().replace(" ", "")}`}
-                        className="hover:text-cyan-400 transition"
-                        variants={linkVariants}
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.95 }}
-                    >
-                        {link}
-                    </motion.a>
-                ))}
+                {["Home", "About", "Skills", "Projects", "Contact"].map(
+                    (link, index) => (
+                        <motion.a
+                            key={index}
+                            href={`#${link.toLowerCase().replace(" ", "")}`}
+                            className="hover:text-cyan-400 transition"
+                            variants={linkVariants}
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.95 }}
+                        >
+                            {link}
+                        </motion.a>
+                    )
+                )}
             </motion.nav>
 
             {/* Mobile Nav */}
@@ -77,17 +83,19 @@ function Header() {
                         animate="visible"
                         exit={{ opacity: 0, y: -20, transition: { duration: 0.3 } }}
                     >
-                        {["Home", "About", "Skills", "My Work", "Contact"].map((link, index) => (
-                            <motion.a
-                                key={index}
-                                href={`#${link.toLowerCase().replace(" ", "")}`}
-                                className="block px-4 py-2 text-white hover:text-cyan-400"
-                                variants={linkVariants}
-                                onClick={() => setIsActive(false)}
-                            >
-                                {link}
-                            </motion.a>
-                        ))}
+                        {["Home", "About", "Skills", "Projects", "Contact"].map(
+                            (link, index) => (
+                                <motion.a
+                                    key={index}
+                                    href={`#${link.toLowerCase().replace(" ", "")}`}
+                                    className="block px-4 py-2 text-white hover:text-cyan-400"
+                                    variants={linkVariants}
+                                    onClick={() => setIsActive(false)}
+                                >
+                                    {link}
+                                </motion.a>
+                            )
+                        )}
                     </motion.nav>
                 )}
             </AnimatePresence>

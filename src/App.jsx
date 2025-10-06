@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
-import Portfolio from './components/Portfolio';
+import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import './index.css';
@@ -14,7 +14,7 @@ function App() {
       <Home />
       <About />
       <Skills />
-      <Portfolio />
+      <Projects />
       <Contact />
     </>
   );

@@ -4,7 +4,7 @@ import img1 from "../assets/1.png";
 import img2 from "../assets/2.png";
 import img3 from "../assets/3.png";
 
-function Portfolio() {
+function Projects() {
   const projects = [
     {
       img: img3,
@@ -33,7 +33,7 @@ function Portfolio() {
 
   return (
     <section
-      id="portfolio"
+      id="projects"
       className="min-h-screen mx-auto pt-40 bg-gradient-to-r from-[#f6f6d9] via-[#47e4e0] to-[#5f81e4] px-6 sm:px-8 py-16 sm:py-20"
     >
       {/* Heading */}
@@ -97,4 +97,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default Projects;
